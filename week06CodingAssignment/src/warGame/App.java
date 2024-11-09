@@ -69,6 +69,8 @@ public class App {
 			} else {
 				System.out.println("TIED!! No points for either player.");
 			}
+			
+			System.out.println("Rolling Score: " + player1.getName() + ": " + player1.getScore() + " | " + player2.getName() + ": " + player2.getScore());
 			System.out.println("------------------------------------");
 			System.out.println();
 			
