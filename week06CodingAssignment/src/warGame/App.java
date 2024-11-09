@@ -7,8 +7,8 @@ public class App {
 		Deck deck = new Deck();
 		deck.shuffle();
 		
-		Player player1 = new Player("Charlie");
-		Player player2 = new Player("Susie");
+		Player player1 = new Player("Loki");
+		Player player2 = new Player("Oliver");
 		
 		
 		for (int i = 0; i < 52; i++) {
@@ -23,6 +23,13 @@ public class App {
 		System.out.println("    Let the game of WAR begin!!!");
 		System.out.println("------------------------------------");
 		System.out.println();
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		System.out.println("Welcome " + player1.getName() + " & " + player2.getName() + "!! Are you ready??");
 		
@@ -39,6 +46,13 @@ public class App {
 		System.out.println();
 		player2.describe();
 		System.out.println();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		for (int i = 0; i < 26; i++) {
 			Card card1 = player1.flip();
