@@ -2,28 +2,28 @@ package warGame;
 
 public class Card {
 	
-	private int value;
-	private String name;
+	private int value; //card value field ie. 2-14
+	private String name; //card name field ie. Ace of Diamonds, Two of Hearts
 	
-	public Card(int value, String name) {
+	public Card(int value, String name) { //card constructor initializes value and name
 		this.value = value;
 		this.name = name;
 	}
 
-	public String getName() {
+	public String getName() { //name getter
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) { //name setter
 		this.name = name;
 	}
 
-	public int getValue() {
+	public int getValue() { //value getter
 		return value;
 	}
 
 	
-	public void describe() {
+	public void describe() { //describe card
 		System.out.println(this.name + " Value of: " + this.value);
 	}
 
